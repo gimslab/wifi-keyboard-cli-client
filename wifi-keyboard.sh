@@ -20,12 +20,12 @@ debugMode=$( [[ "$mode" = "-d" ]] && echo true || echo false)
 silentMode=$( [[ "$mode" = "-s" ]] && echo true || echo false)
 
 if [[ "$addr" = "" ]]; then
-  echo "usage:	network-keyboard-client.sh <addr> [-s|-d]"
+  echo "usage:	wifi-keyboard.sh <addr> [-s|-d]"
   echo "	<addr> is a server url. you can get it from your phone."
   echo "	-s silent mode"
   echo "	-d debug mode"
   echo "exam:"
-  echo "	network-keyboard-client.sh http://192.168.50.220:7777"
+  echo "	wifi-keyboard.sh http://192.168.50.220:7777"
   exit
 fi
 
