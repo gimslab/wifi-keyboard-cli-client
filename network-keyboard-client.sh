@@ -14,16 +14,26 @@ function sendKey {
   curl -s ${addr}/key?${seq},$keyCodeParam,
 }
 
-addr='http://192.168.50.220:7777'
-
-mode=$1 # -d debug, -s silent
+addr=$1
+mode=$2 # -d debug, -s silent
 debugMode=$( [[ "$mode" = "-d" ]] && echo true || echo false)
 silentMode=$( [[ "$mode" = "-s" ]] && echo true || echo false)
+
+if [[ "$addr" = "" ]]; then
+  echo "usage:	network-keyboard-client.sh <addr> [-s|-d]"
+  echo "	<addr> is a server url. you can get it from your phone."
+  echo "	-s silent mode"
+  echo "	-d debug mode"
+  echo "exam:"
+  echo "	network-keyboard-client.sh http://192.168.50.220:7777"
+  exit
+fi
+
 echo addr: $addr
 echo debugMode: $debugMode
 echo silentMode: $silentMode
-seq=$(findStartSeq)
 
+seq=$(findStartSeq)
 settings=$(stty -g)
 [[ $silentMode = true ]] && stty -echo
 stty raw
