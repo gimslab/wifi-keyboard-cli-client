@@ -1,7 +1,9 @@
 #!/bin/bash
-
-# exam
-# curl 'http://192.168.50.220:7777/key?215,C97,' \
+#
+# use latest bash e.g. 5.1.4
+#
+# protocol exam
+# curl 'http://192.168.50.220:7777/key?215,C97,'
 # C: character, D: down, U: up
 
 function findStartSeq {
