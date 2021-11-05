@@ -6,7 +6,7 @@ Features for several control keys and function keys will be added.
 e.g. Del, ArrowKey, Esc, Home, End, PgUp, PgDn
 
 Bash version(wifi-keyboard.sh) is stable. Use python script just for testing.
-This is tested on Ubuntu Linux and OSX with latest version of bash now.
+This has been tested on Ubuntu Linux and OSX with latest version of bash now.
 
 Note
 If you are using old Bash version like 3.2.x in OSX, Upgrade it to latest version of bash like 5.1.4
