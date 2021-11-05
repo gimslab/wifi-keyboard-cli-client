@@ -1,3 +1,4 @@
+#set your own bash path
 #!/bin/bash
 #
 # use latest bash e.g. 5.1.4
