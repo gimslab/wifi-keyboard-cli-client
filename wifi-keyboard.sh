@@ -39,7 +39,6 @@ echo silentMode: $silentMode
 seq=$(findStartSeq)
 settings=$(stty -g)
 [[ $silentMode = true ]] && stty -echo
-stty raw
 IFS=
 
 while ( true ); do
