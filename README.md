@@ -6,3 +6,5 @@ Features for several control keys and function keys will be added.
 e.g. Del, ArrowKey, Esc, Home, End, PgUp, PgDn
 
 Bash version is stable. Use python script just for a test.
+
+Bash version was tested on Ubuntu now.
